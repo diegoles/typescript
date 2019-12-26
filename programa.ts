@@ -1,3 +1,20 @@
+module Tienda{
+    export class Ropa {
+        constructor(public titulo:string){
+            alert(titulo);
+        }
+    }
+
+    export class Informatica {
+        constructor(public titulo:string){
+            alert("Tienda de tecnología: " +titulo);
+        }
+    }
+}
+
+import Informatica = Tienda.Informatica;
+let cargar_informatica = new Informatica("Suer Tienda");
+
 function arranque(lanzar:string){
     return function(target:Function){
         target.prototype.lanzamiento = function():void{
