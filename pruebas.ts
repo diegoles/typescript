@@ -31,7 +31,23 @@ if (a === 7) {
 
 console.log("Fuera del if :" + a + " - " + b);
 
+function devuelveNumero(num:number):string{
+    return "Numero devuelto: " + num;
+
+}
+
+function devuelveString(texto:string):number{
+    if (texto =="hola") {
+        var num = 66;
+    } else {
+        var num = 99;
+    }
+    return num;
+
+}
 
 
+alert(devuelveNumero(34));
+alert(devuelveString("hola"));
 
 
