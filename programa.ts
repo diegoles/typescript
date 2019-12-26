@@ -1,3 +1,12 @@
+function arranque(lanzar:string){
+    return function(target:Function){
+        target.prototype.lanzamiento = function():void{
+            alert(lanzar);
+        }
+    }
+}
+
+@arranque("Lanzamiento al curso Node JS")
 class Programa {
     public nombre: string;
     public version: number;
@@ -19,6 +28,8 @@ class Programa {
     }
 }
 
+var programa = new Programa();
+programa.lanzamiento();
 class EditorVideo extends Programa{
     public timeLine: number;
 
