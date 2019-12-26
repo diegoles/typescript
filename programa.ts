@@ -67,3 +67,14 @@ function guardar(){
 
     (<HTMLInputElement> document.getElementById("nombre")).value = "";
 }
+
+setInterval(() => {
+    console.log("Hola setInterval");
+}, 1000);
+
+var frutas = ["manzana", "naranja", "uva"];
+
+var recorrer = frutas.map(fruta=>{
+    console.log(fruta);
+    console.log(fruta.length);
+});
